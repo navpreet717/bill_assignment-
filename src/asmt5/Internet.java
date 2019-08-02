@@ -31,6 +31,7 @@ class Internet extends Bill {
 	public void setGb_used(int gb_used) {
 		this.gb_used = gb_used;
 	}
+	
 public void display()
 {
 	super.display();

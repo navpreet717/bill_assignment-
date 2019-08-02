@@ -88,6 +88,15 @@ public class Customer implements IDisplay, Comparable<Customer> {
 	public void setTbill(int tbill) {
 		this.tbill = tbill;
 	}
+	public double totalBalance() {
+		double total=0;
+		for(int i=0;i<Bill_List.size();i++)
+		{
+			Bill b1=Bill_List.get(i);
+			total+=b1.getTbill_amount();
+		}
+		return total;
+	}
 
 //array for sorting
 	ArrayList<Bill> Bill_List = new ArrayList<Bill>();
@@ -121,7 +130,11 @@ public class Customer implements IDisplay, Comparable<Customer> {
 				b1.display();
 			}
 		}
-	}
+		System.out.println("TOTAL BILL TO PAY"+totalBalance());
+		System.out.println("   ");
+
+		}
+	
 
 //built in method when implement interface in customer class
 	@Override

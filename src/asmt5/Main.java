@@ -20,7 +20,6 @@ public class Main {
 		cc1.add_bill(In);
 		cc1.add_bill(Mo);
 		cc1.add_bill(Mo1);
-		cc2.add_bill(null);
 		
 		//sort customer
 		Customer_list customerArray=new Customer_list();
